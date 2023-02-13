@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Home from "./Components/Pages/Home";
-import ProfilePage from './components/pages/ProfilePage';
+import ProfilePage from "./Components/Pages/Profile";
 import Authentication from './Components/Authentication/Authentication';
 
 function App() {
