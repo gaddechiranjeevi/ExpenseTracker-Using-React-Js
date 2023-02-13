@@ -1,0 +1,17 @@
+.buton {
+    cursor: pointer;
+    width: 70%;
+    padding: 7px;
+    border: none;
+    background-color: #1a73e8;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
+.button:hover,
+.button:focus {
+    background-color: rgb(223, 252, 242);
+}
