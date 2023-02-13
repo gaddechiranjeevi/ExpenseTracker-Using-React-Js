@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import classes from "./page.module.css";
+import classes from "./Page.module.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
