@@ -1,0 +1,63 @@
+h1{
+    font-family: sans-serif;
+    font-size: 30px;
+  }
+  
+  .signUp {
+    position: absolute;
+    background-color: whitesmoke;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .signUp input {
+    width: 93%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+  }
+  .signUp button {
+      cursor: pointer;
+      background-color: #1a73e8;
+      width: 95%;
+      padding: 10px;
+      margin: 1rem 0 1rem 0;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      font-size: 18px;
+      font-weight: bolder;
+  }
+  .forgot button{
+    color: white;
+    background-color: #1a73e8;
+  }
+  .forgot input{
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px; 
+  }
+  .forgot {
+    position: absolute;
+    background-color: whitesmoke;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }

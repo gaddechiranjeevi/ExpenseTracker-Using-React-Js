@@ -1,0 +1,29 @@
+.auth {
+    margin: 0 3rem;
+    text-align: center;
+  }
+  .button{
+    position: absolute;
+    background-color: whitesmoke;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  .changebtn{
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    border: none;
+    color: blue;
+  }
+  
+  
+  
