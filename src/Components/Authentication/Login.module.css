@@ -1,0 +1,39 @@
+h1{
+    font-family: sans-serif;
+    font-size: 30px;
+  }
+  
+  .login {
+  position: absolute;
+  background-color: whitesmoke;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 55px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  }
+  
+  .login input {
+    width: 93%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+  }
+  .login button {
+    cursor: pointer;
+    width: 93%;
+    padding: 10px;
+    margin: 1rem 0 1rem 0;
+    border: none;
+    background-color: #1a73e8;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+  }
