@@ -1,0 +1,161 @@
+.expense {
+    width: 95%;
+    max-width: 25rem;
+    margin: 2rem auto;
+    padding: 12px;
+  }
+   
+  .hr{
+    width: 98%;
+    left: 1%;
+    top: 53%;
+    margin-bottom: 5px;
+    position: absolute;
+  }
+  .expense h1 {
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .expense input:hover,
+  .expense input:active,
+  .expense input:focus {
+    background-color: rgb(203, 234, 255);
+  }
+  
+  .expense button {
+    width: 25%;
+    top: 17rem;
+    position: absolute;
+    padding: 8px;
+    margin: 1rem 0 1rem 0;
+    border: none;
+    background-color: rgb(53, 158, 243);
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .list{
+    padding: 3px;
+    width: 97%;
+    border: 1px solid red;
+    font-size: 18px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    line-height: 2rem;
+    list-style: none;  
+    margin-bottom: 6px;
+  }
+
+  .list ul{
+    list-style: none;
+  }
+
+  .list button{
+    background-color: rgb(97, 243, 243);
+    width: 5%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    font-weight: 500;
+    padding: 3px;
+    cursor: pointer;
+  }
+
+  .download button{
+    background-color: green;
+    position: absolute;
+    border: none;
+    padding: 5px;
+    left: 70%;
+    top: 17rem;
+    width: 25%;
+    padding: 8px;
+    margin: 1rem 0 1rem 0;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+.amount input{
+  position: absolute;
+  padding: 10px;
+  left: 3%;
+  width: 28%;
+  border: 0.5px solid rgb(215, 215, 215);
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 1s;
+}
+  
+.desc input{
+  position: absolute;
+  padding: 10px;
+  width: 28%;
+  left: 35.5%;
+  border: 0.5px solid rgb(215, 215, 215);
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 1s;
+}
+.select select{
+  position: absolute;
+  padding: 10px;
+  left: 68%;
+  width: 28%;
+  border: 0.5px solid rgb(215, 215, 215);
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 1s;
+}
+.btn{
+    background-color: blueviolet;
+    position: absolute;
+    border: none;
+    padding: 5px;
+    left: 3%;
+    top: 17rem;
+    width: 25%;
+    padding: 8px;
+    margin: 1rem 0 1rem 0;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 100;
+}
+.details{
+  position: absolute;
+  left: 3%;
+  top: 57%;
+  width: 94%;
+  border: 2px solid green;
+  border-left: none;
+  border-right: none;
+  font-size: 18px;
+  padding: 15px;
+}
+.Am{
+  margin-left: 3%;
+  top: 15%;
+  position:absolute;
+  font-weight: bold; 
+}
+.Des{
+ margin-left: 22%;
+ position: absolute;
+ top: 15%;
+ font-weight: bold;
+}
+.Cat{
+  margin-left: 51%;
+  position: absolute;
+  top: 15%;
+  font-weight: bold;
+}

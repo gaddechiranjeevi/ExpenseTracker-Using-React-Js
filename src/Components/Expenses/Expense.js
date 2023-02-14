@@ -55,7 +55,23 @@ const Expense = () => {
             console.log(err);
         }
     };
+    const deleteExpenseHandler = (expenseId) => {
+        axios.delete(
+            `https://expense-tracker-7d5cb-default-rtdb.firebaseio.com/expense/${expenseId}.json`
+        ).then((res) => {
+            console.log(res);
+            getExpenseData();
+        }).catch((err) => {
+            console.log(err);
+        })
+    };
 
+    const editExpenseHandler = (expenseId) => {
+        expenseRef.current.value = expensesDispatched.expenses[expenseId].amount;
+        descriptionRef.current.value = expensesDispatched.expenses[expenseId].description;
+        categoryRef.current.value = expensesDispatched.expenses[expenseId].category;
+        deleteExpenseHandler(expenseId);
+    };
 
     
     return (
@@ -123,7 +139,24 @@ const Expense = () => {
                                 }}>  
                                     { expensesDispatched.expenses[expense].category }  
                                 </span>
-
+                                <button  
+                                        style={{
+                                            backgroundColor: 'green',
+                                            color:'white',
+                                            border:'1px solid green',
+                                            marginLeft:'20%'
+                                        }} 
+                                        onClick={() => editExpenseHandler(expense)}>Edit
+                                    </button>
+                                    <button
+                                        style={{
+                                            backgroundColor: 'red',
+                                            marginLeft:'10px',
+                                            color:'white',
+                                            border: '1px solid red'
+                                        }} 
+                                        onClick={() => deleteExpenseHandler(expense)}>Delete
+                                    </button>
                             </li>
                         )
                     })}
