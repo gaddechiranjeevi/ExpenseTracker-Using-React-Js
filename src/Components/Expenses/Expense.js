@@ -118,6 +118,12 @@ const Expense = () => {
                 </div>
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </form>
+            {totalExpense > 10000 && (
+                <button className={classes.btn}onClick={() => 
+                    dispatch(ThemeAction.onThemeChange())}>
+                    Active Premium
+                </button>
+            )}
             <div>
                 <ul>
                     {Object.keys(expensesDispatched.expenses).map((expense) => {
