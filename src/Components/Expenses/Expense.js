@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useDispatch, useSelector } from "react-redux";
 import { Fragment, useEffect, useRef, useState } from 'react';
 import classes from './Expense.module.css';
+import { ThemeAction } from '../../store/theme-reducer';
 import { expensAction } from '../../store/expense-reducer';
 
 
@@ -9,7 +10,7 @@ const Expense = () => {
     const expenseRef = useRef(null);
     const descriptionRef = useRef('');
     const categoryRef = useRef('');
-
+    const [totalExpense, setTotalExpense] = useState(0);
     const dispatch = useDispatch();
 
     const expensesDispatched = useSelector((state) => state.expenses);
