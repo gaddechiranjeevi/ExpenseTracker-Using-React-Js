@@ -5,6 +5,7 @@ import Header from "./Components/Layout/Header";
 import { useSelector } from 'react-redux';
 import Home from "./Components/Pages/Home";
 import ProfilePage from "./Components/Pages/Profile";
+import ExpensePage from './components/Pages/ExpensePage';
 import Authentication from './Components/Authentication/Authentication';
 
 function App() {
@@ -28,6 +29,10 @@ function App() {
             </Route>
             <Route path='/profile'>
               {isLogin && <ProfilePage />}
+              {!isLogin && <Redirect to='/auth' />}
+            </Route>
+            <Route path='/expense'>
+              {isLogin && <ExpensePage />}
               {!isLogin && <Redirect to='/auth' />}
             </Route>
       </Switch>
