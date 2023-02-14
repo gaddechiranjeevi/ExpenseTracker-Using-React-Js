@@ -18,6 +18,12 @@ const authSlice = createSlice({
             state.isLogin = action.payload.idToken;
             localStorage.setItem('idToken', state.idToken);
             localStorage.setItem('email', state.email);
+        },
+        logout(state) {
+            state.idToken = null;
+            state.isLogin = false;
+            localStorage.removeItem('idToken');
+            localStorage.removeItem('email');
         }
     }
 });

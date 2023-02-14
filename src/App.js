@@ -1,6 +1,7 @@
 import './App.css';
 import { Fragment } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import Header from "./Components/Layout/Header";
 import { useSelector } from 'react-redux';
 import Home from "./Components/Pages/Home";
 import ProfilePage from "./Components/Pages/Profile";
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <Fragment>
+      <Header />
       <main>
      <Switch>
           {!isLogin &&
